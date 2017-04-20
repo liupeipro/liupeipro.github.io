@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-04-20T13:43:52.000Z</updated>
+  <updated>2017-04-20T14:48:57.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,63 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android Studio 插件整理</title>
+    <link href="http://yoursite.com/2017/04/20/Android-Studio-%E6%8F%92%E4%BB%B6%E6%95%B4%E7%90%86/"/>
+    <id>http://yoursite.com/2017/04/20/Android-Studio-插件整理/</id>
+    <published>2017-04-20T14:48:28.000Z</published>
+    <updated>2017-04-20T14:48:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Android-Layout-ID-Converter"><a href="#Android-Layout-ID-Converter" class="headerlink" title="Android Layout ID Converter"></a>Android Layout ID Converter</h3><pre><code>用途：findViewById
+使用方式：右键layout 里面的xml 文件，Convert Android layout xml
+</code></pre><h3 id="SelectorChapek"><a href="#SelectorChapek" class="headerlink" title="SelectorChapek"></a>SelectorChapek</h3><pre><code>用途：状态选择器的生成
+使用方式：把图片拷贝到drawable里面，右键文件夹，Generate Android Selectors
+</code></pre><h3 id="Android-Code-Generator"><a href="#Android-Code-Generator" class="headerlink" title="Android Code Generator"></a>Android Code Generator</h3><pre><code>根据布局文件快速生成对应的Activity，Fragment，Adapter，Menu。
+</code></pre><h3 id="Android-Methods-Count"><a href="#Android-Methods-Count" class="headerlink" title="Android Methods Count"></a>Android Methods Count</h3><pre><code>显示依赖库中得方法数
+</code></pre><h4 id="CodeGlance"><a href="#CodeGlance" class="headerlink" title="CodeGlance"></a>CodeGlance</h4><pre><code>在右边可以预览代码，实现快速定位
+</code></pre><h4 id="GenerateSerialVersionUID"><a href="#GenerateSerialVersionUID" class="headerlink" title="GenerateSerialVersionUID"></a>GenerateSerialVersionUID</h4><pre><code>实现Serializable序列化bean
+</code></pre><h4 id="dagger-intellij-plugin"><a href="#dagger-intellij-plugin" class="headerlink" title="dagger-intellij-plugin"></a>dagger-intellij-plugin</h4><pre><code>dagger可视化辅助工具
+</code></pre><h4 id="AndroidProguardPlugin"><a href="#AndroidProguardPlugin" class="headerlink" title="AndroidProguardPlugin"></a>AndroidProguardPlugin</h4><pre><code>一键生成项目混淆代码插件，值得你安装~(不过目前可能有些第三方项目的混淆还未添加完全)
+</code></pre><h4 id="otto-intellij-plugin"><a href="#otto-intellij-plugin" class="headerlink" title="otto-intellij-plugin"></a>otto-intellij-plugin</h4><pre><code>otto事件导航工具
+</code></pre><h4 id="Android-DPI-Calculator"><a href="#Android-DPI-Calculator" class="headerlink" title="Android-DPI-Calculator"></a>Android-DPI-Calculator</h4><pre><code>DPI计算插件
+</code></pre><h4 id="ignore"><a href="#ignore" class="headerlink" title=".ignore"></a>.ignore</h4><pre><code>我们都知道在Git 中想要过滤掉一些不想提交的文件，可以把相应的文件添加到.gitignore 中，而.gitignore 这个Android Studio 插件根据不同的语言来选择模板，就不用自己在费事添加一些文件了，而且还有自动补全功能，过滤文件再也不要复制文件名了。我们做项目的时候，并不是所有文 件都是要提交的，比如构建的build 文件夹，本地配置文件，每个Module 生成的iml 文件，但是我们每次add，commit 都会不小心把它们添加上去，而gitignore 就是解决这种痛点的，如果你不想提交的文件，就可以在创建项目的时候将这个文件中添加即可，将一些通用的东西屏蔽掉
+</code></pre><h4 id="CheckStyle-IDEA"><a href="#CheckStyle-IDEA" class="headerlink" title="CheckStyle-IDEA"></a>CheckStyle-IDEA</h4><pre><code>CheckStyle-IDEA 是一个检查代码风格的插件，比如像命名约定，Javadoc，类设计等方面进行代码规范和风格的检查，你们可以遵从像Google Oracle 的Java 代码指南 ，当然也可以按照自己的规则来设置配置文件，从而有效约束你自己更好地遵循代码编写规范
+</code></pre><h4 id="WakaTime"><a href="#WakaTime" class="headerlink" title="WakaTime"></a>WakaTime</h4><pre><code>记录你在IDE上的工作时间
+</code></pre><h4 id="adb-idea"><a href="#adb-idea" class="headerlink" title="adb-idea"></a>adb-idea</h4><pre><code>支持直接在AS面板中进行ADB操作
+</code></pre><h4 id="lint-cleaner-plugin"><a href="#lint-cleaner-plugin" class="headerlink" title="lint-cleaner-plugin"></a>lint-cleaner-plugin</h4><pre><code>https://github.com/marcoRS/lint-cleaner-plugin
+移除Android中无用资源
+</code></pre><h4 id="dexcount-gradle-plugin"><a href="#dexcount-gradle-plugin" class="headerlink" title="dexcount-gradle-plugin"></a>dexcount-gradle-plugin</h4><pre><code>方法数计算，对于较大应用避免方法爆棚很有用
+</code></pre><h4 id="JsonOnlineViewer"><a href="#JsonOnlineViewer" class="headerlink" title="JsonOnlineViewer"></a>JsonOnlineViewer</h4><pre><code>可实现直接在android studio中调试接口数据，可以选择请求类型，自定义请求头及请求体，json数据格式化后展示
+</code></pre><h4 id="Android-Drawable-Importer"><a href="#Android-Drawable-Importer" class="headerlink" title="Android Drawable Importer"></a>Android Drawable Importer</h4><pre><code>为了适应所有Android屏幕的大小和密度，每个Android项目都会包含drawable文件夹。任何具备Android开发经验的开发人员都知道，为了支持所有的屏幕尺寸，你必须给每个屏幕类型导入不同的画板。Android Drawable Importer插件能让这项工作变得更容易。它可以减少导入缩放图像到Android项目所需的工作量。Android Drawable Importer添加了一个在不同分辨率导入画板或缩放指定图像到定义分辨率的选项。这个插件加速了开发人员的画板工作。
+</code></pre><h4 id="AndroidCodeGenerator"><a href="#AndroidCodeGenerator" class="headerlink" title="AndroidCodeGenerator"></a>AndroidCodeGenerator</h4><pre><code>可以生成ViewHolder和findView方法的代码。尤其是在Adapter实现类的getView当中很有用。
+</code></pre><h4 id="Codota"><a href="#Codota" class="headerlink" title="Codota"></a>Codota</h4><pre><code>搜索最好的Android代码。他的搜索源，不仅只有Github，而且还有知名博客和开发者网站，让你搜索一个东西，不用在找上半天；除了搜索功能，首页的下方还罗列比较流行的类库，还提供保存代码的CodeBox，同时还提供了Chrome 插件和Android Studio 插件，最后通过Google，Github，Facebook 任意一个授权登录即可使用；而且当你点击搜索的结果（Java class）的时候，右侧会显示UML 视图，而且左边的代码如果点击会有高亮现实，而且还会显示Doc，并提供了API Doc 的链接
+</code></pre><h4 id="Settings-Repository："><a href="#Settings-Repository：" class="headerlink" title="Settings Repository："></a>Settings Repository：</h4><pre><code>不同设备之间同步Android Studio的配置。
+</code></pre><h4 id="GsonFormat"><a href="#GsonFormat" class="headerlink" title="GsonFormat"></a>GsonFormat</h4><pre><code>根据Gson　api接口生成相应的实体类
+</code></pre><h4 id="jimu-Mirror"><a href="#jimu-Mirror" class="headerlink" title="jimu Mirror"></a>jimu Mirror</h4><pre><code>Android Studio配备了一个可视化的布局编辑器。但是一个静态的布局预览有时候对于开发人员而言可能还不够，因为静态预览不能预览动画、颜色和触摸区域，所以jimu Mirror来了，这是一个可以让你在真实的设备上迅速测试布局的插件。jimu Mirror允许在设备上预览随同编码更新的Android布局
+</code></pre><h4 id="ADB-WIFI"><a href="#ADB-WIFI" class="headerlink" title="ADB WIFI"></a>ADB WIFI</h4><pre><code>Android wifi无线调试App
+</code></pre><h4 id="LayoutFormatter"><a href="#LayoutFormatter" class="headerlink" title=".LayoutFormatter"></a>.LayoutFormatter</h4><pre><code>drakeet 开发一个一键格式化你的 XML 文件的 Android Studio 插件，至于为什么不用 Android Studio 自带的格式化功能而用这个插件，
+</code></pre><p>可以看下作者的一篇 Blog -&gt; <a href="https://drakeet.me/layoutformatter" target="_blank" rel="external">当我们谈 XML 布局文件代码的优雅性</a></p>
+<h4 id="MVPHelper"><a href="#MVPHelper" class="headerlink" title="MVPHelper"></a>MVPHelper</h4><pre><code>一款Intellj IDEA 和Android Studio的插件，可以为MVP生成接口以及实现类，解放双手。
+</code></pre><p>具体请查看<a href="http://androidwing.net/index.php/27" target="_blank" rel="external">Android Studio插件之MVPHelper</a>，一键生成MVP代码一文</p>
+<h4 id="MultiTypeTemplates"><a href="#MultiTypeTemplates" class="headerlink" title="MultiTypeTemplates"></a>MultiTypeTemplates</h4><pre><code>生成MultiType和itemviewprovider
+</code></pre><p>-&gt; <a href="http://gank.io/post/5823bcf6421aa90e799ec2ad" target="_blank" rel="external">关于MultiType请查看Android 复杂的列表视图新写法 MultiType</a></p>
+<h4 id="JVM-Debugger-Memory-View"><a href="#JVM-Debugger-Memory-View" class="headerlink" title="JVM Debugger Memory View"></a>JVM Debugger Memory View</h4><pre><code>Android Studio和IDEA中一个很有用的内存调试插件
+</code></pre><p>详细可参考说一说<a href="https://zhuanlan.zhihu.com/p/25110433" target="_blank" rel="external">Android Studio和IDEA中一个很有用的内存调试插件</a></p>
+<h4 id="ReciteWords"><a href="#ReciteWords" class="headerlink" title="ReciteWords"></a>ReciteWords</h4><pre><code>这是一个androidStudio翻译与陌生单词记录插件
+你所翻译的单词会被记录在你当前用户目录下的ReciteWords.md文件中（如:C:\Users\Bolex\ReciteWords.md）。可以通过Markdown编辑器打开它进行学习。
+</code></pre><h2 id="查看应用的方法数"><a href="#查看应用的方法数" class="headerlink" title="查看应用的方法数"></a>查看应用的方法数</h2><p>查看library的方法数的方法是使用 Dexcount gradle plugin ，只需要在app/build.gradle中集成：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">buildscript &#123;  </div><div class="line">    repositories &#123;  </div><div class="line">        jcenter() // or mavenCentral()  </div><div class="line">    &#125;  </div><div class="line">  </div><div class="line">    dependencies &#123;  </div><div class="line">        classpath &apos;com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.2&apos;  </div><div class="line">    &#125;  </div><div class="line">&#125;  </div><div class="line">// make sure this line comes *after* you apply the Android plugin  </div><div class="line">apply plugin: &apos;com.getkeepsafe.dexcount&apos;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;Android-Layout-ID-Converter&quot;&gt;&lt;a href=&quot;#Android-Layout-ID-Converter&quot; class=&quot;headerlink&quot; title=&quot;Android Layout ID Converter&quot;&gt;&lt;/a&gt;Andro
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Test</title>
